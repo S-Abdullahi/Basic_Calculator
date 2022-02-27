@@ -1,0 +1,143 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  text-align: center;
+  background: black;
+  font-size: 100%;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+h1{
+  color: orange;
+  margin-top: 50px;
+}
+
+section{
+  width: 30%;
+  height: auto;
+  margin: 50px auto;
+  border: solid orange 2px;
+  background: black;
+  /* position: relative; */
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 2;
+}
+
+.btn{
+  width: 10%;
+  margin: 2%;
+  color: orange;
+  font-size: 1.2rem;
+  background-color: rgb(58, 41, 9);
+  
+}
+
+.screen{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+#screen, #answer{
+  width: 46%;
+  height: 35px;
+  border: solid orange 1px;
+}
+
+#answer{
+  text-align: end;
+  padding-right: 10px;
+}
+
+.btn:hover{
+  background-color: black;
+  border: solid orange 2px;
+}
+
+span{
+  color: orange;
+}
+
+.foot{
+  margin-top: 15px;
+}
+
+i{
+  color: orange;
+  padding-right: 10px;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width:700px){
+
+  section{
+    width: 60%;
+    height: 400px;
+    padding-top: 10%;
+  }
+  .btn{
+    width: 20%;
+    height: 40px;
+    margin-top: 5%;
+  }
+
+  .screen{
+    
+    margin-bottom: 30px;
+  }
+
+  #screen, #answer{
+    width: 82%;
+  }
+
+  #screen{
+    border-bottom: 0;
+  }
+
+  #answer{
+    border-top: 0;
+  }
+}
